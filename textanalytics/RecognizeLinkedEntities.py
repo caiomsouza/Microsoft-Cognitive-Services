@@ -1,3 +1,6 @@
+# Author: Caio Moreno
+# pip install <please install all azure python libs before your run this code>
+
 from azure.ai.textanalytics import TextAnalyticsClient
 
 credential = "YOUR_KEY"
