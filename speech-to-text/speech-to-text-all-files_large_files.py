@@ -21,8 +21,12 @@ print("################################")
 #print(configuration)
 print("################################")
 
+# Speech SDK
 speech_key = configuration["speech_api"]["speech_key"]
 service_region = configuration["speech_api"]["service_region"]
+
+# File location
+location = configuration["location"]["full_file_path"]
 
 #print("speech_key: " + speech_key)
 print("service_region: " + service_region)
@@ -82,7 +86,9 @@ def speech_recognize_continuous_from_file(file):
 
 
 # Define the files locations and list audio files (*.wav)
-location = 'C:\\Users\\camoren\\Documents\\GitHub\\Microsoft-Cognitive-Services\\speech-to-text\\data'
+#location = 'C:\\Users\\camoren\\Documents\\GitHub\\Microsoft-Cognitive-Services\\speech-to-text\\data'
+location = location
+
 fileset = [file for file in glob.glob(location + "**/*.wav", recursive=True)]
 
 # Loop to call function to convert audio files to text
