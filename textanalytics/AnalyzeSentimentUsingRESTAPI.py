@@ -10,10 +10,29 @@ Created on Tue Jul 10 21:37:06 2018
 
 import requests
 from pprint import pprint
+import json
+
+
+# Create a config file with your own configuration
+# config_file_dev.json has my dev config
+config_file_name = "../textanalytics/config_file/config_file_dev.json"
+
+with open(config_file_name, 'r') as json_data_file:
+    configuration = json.load(json_data_file)
+
+print("################################")
+#print(configuration)
+print("################################")
+
+credential = configuration["text_api"]["credential"]
+endpoint = configuration["text_api"]["endpoint"]
+
+#print("credential: " + credential)
+print("endpoint: " + endpoint)
 
 # change the subscription key for your own subscription_key
-subscription_key = '<your_subscription_key>'
-text_analytics_base_url = 'https://westeurope.api.cognitive.microsoft.com/text/analytics/v2.0/' 
+subscription_key = credential
+text_analytics_base_url = 'https://northeurope.api.cognitive.microsoft.com/text/analytics/v2.0/' 
 sentiment_api_url = text_analytics_base_url + "sentiment"
 print(sentiment_api_url)
 
@@ -32,4 +51,3 @@ headers   = {"Ocp-Apim-Subscription-Key": subscription_key}
 response  = requests.post(sentiment_api_url, headers=headers, json=documents)
 sentiments = response.json()
 pprint(sentiments)
-

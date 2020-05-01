@@ -1,5 +1,4 @@
 # Author: Caio Moreno
-# pip install <please install all azure python libs before your run this code>
 
 from azure.core.credentials import AzureKeyCredential
 from azure.ai.textanalytics import TextAnalyticsClient
@@ -27,13 +26,12 @@ print("endpoint: " + endpoint)
 credential = AzureKeyCredential(credential)
 endpoint = endpoint
 
-
 text_analytics_client = TextAnalyticsClient(endpoint, credential)
 
 documents = [
-    "Redmond is a city in King County, Washington, United States, located 15 miles east of Seattle.",
-    "I need to take my cat to the veterinarian.",
-    "I will travel to South America in the summer.",
+    "I did not like the restaurant. The food was too spicy.",
+    "The restaurant was decorated beautifully. The atmosphere was unlike any other restaurant I've been to.",
+    "The food was yummy. :)",
     """Custom speech provides tools that allow you to visually inspect the recognition quality of a model by comparing audio data with the corresponding recognition
  result from the custom speech portal. You can playback uploaded audio and determine if the provided recognition result is correct. 
  This tool allows you to quickly inspect quality of Microsoft's baseline speech to text model or a trained custom model without having to 
@@ -42,8 +40,14 @@ documents = [
 often gathering information under different identity's.""",
 ]
 
-response = text_analytics_client.extract_key_phrases(documents, language="en")
+response = text_analytics_client.analyze_sentiment(documents, language="en")
 result = [doc for doc in response if not doc.is_error]
 
-for doc in result:
-    print(doc.key_phrases)
+for idx, doc in enumerate(result):
+    print("Document text: {}\n".format(documents[idx]))
+    print("Overall sentiment: {}".format(doc.sentiment))
+    print("Scores: positive={}; neutral={}; negative={} \n".format(
+        doc.confidence_scores.positive,
+        doc.confidence_scores.neutral,
+        doc.confidence_scores.negative,
+))

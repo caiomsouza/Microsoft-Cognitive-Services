@@ -1,0 +1,6 @@
+{
+    "text_api":{
+        "credential":"YOUR_CREDENTIAL",
+        "endpoint":"YOUR_ENDPOINT"
+    }
+}

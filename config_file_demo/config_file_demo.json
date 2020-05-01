@@ -1,0 +1,6 @@
+{
+    "speech_api":{
+        "speech_key":"YOUR_KEY",
+        "service_region":"YOUR_REGION"
+    }
+}

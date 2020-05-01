@@ -1,0 +1,16 @@
+pip install azure-datalake-store
+pip install azure-ai-textanalytics
+pip install azure-storage
+pip install azure-mgmt-core
+pip install azure-mgmt
+
+
+# https://azure.github.io/azure-sdk/releases/latest/all/python.html
+pip install azure-cognitiveservices-language-textanalytics
+
+pip install azure-ai-textanalytics
+
+
+
+
+
