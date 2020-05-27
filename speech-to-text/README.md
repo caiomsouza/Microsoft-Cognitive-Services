@@ -8,7 +8,7 @@ Example audio files are located in the [data folder](https://github.com/caiomsou
 pip install azure-cognitiveservices-speech
 ```
 
-# [Script](https://github.com/caiomsouza/Microsoft-Cognitive-Services/blob/master/speech-to-text/speech-to-text-all-files_large_files_parse_result_save_to_csv.py) to convert all audio files (small or large audio files) to CSV output (Recommened Script)
+# Script to convert all audio files (small or large audio files) to CSV output [Recommened Script](https://github.com/caiomsouza/Microsoft-Cognitive-Services/blob/master/speech-to-text/speech-to-text-all-files_large_files_parse_result_save_to_csv.py)
 ```
 python speech-to-text-all-files_large_files_parse_result_save_to_csv.py > script_output.log
 ```
