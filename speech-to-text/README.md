@@ -1,7 +1,7 @@
 # Speech to Text Demo using Microsoft Azure Cognitive Services SDK
 This demo will show how to use the Microsoft Azure Cognitive Services to convert audio files (.wav format) to text. <BR>
 
-Example audio files are located in the data folder<BR>
+Example audio files are located in the [data folder](https://github.com/caiomsouza/Microsoft-Cognitive-Services/tree/master/speech-to-text/data)<BR>
 
 ## Install library
 ```
