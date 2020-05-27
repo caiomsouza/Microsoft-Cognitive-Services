@@ -1,7 +1,6 @@
 ### Speech to Text 
 
-### Demos
-https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/quickstart/python/from-microphone
+This demo will show how to use the Microsoft Azure Cognitive Services to convert audio files (.wav format) to text.
 
 ### Install library
 ```
@@ -31,4 +30,5 @@ python "list_audio_files.py
 python speech-to-text-all-files_large_files.py > output/output_audio_files_first_15sec_20200501_01.log
 ```
 
-
+### Reference
+https://github.com/Azure-Samples/cognitive-services-speech-sdk/tree/master/quickstart/python/from-microphone
