@@ -7,7 +7,7 @@ import json
 
 # Create a config file with your own configuration
 # config_file_dev.json has my dev config
-config_file_name = "../speech-to-text/config_file/config_file_dev.json"
+config_file_name = "speech-to-text/config_file/config_file_dev.json"
 
 with open(config_file_name, 'r') as json_data_file:
     configuration = json.load(json_data_file)

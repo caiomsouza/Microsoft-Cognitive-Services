@@ -1,6 +1,6 @@
 import json
 
-config_file_name = "../config_file_demo/config_file_demo.json"
+config_file_name = "config_file_demo/config_file_demo.json"
 
 with open(config_file_name, 'r') as json_data_file:
     configuration = json.load(json_data_file)

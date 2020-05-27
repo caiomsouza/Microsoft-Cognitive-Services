@@ -1,0 +1,8 @@
+{
+    "blob_storage":{
+        "connect_str":"YOUR_KEY"
+    },
+    "local_folder":{
+        "local_folder_full_path":"C:\\Users\\camoren\\Documents\\GitHub\\Microsoft-Cognitive-Services\\blobstorage"
+    }
+}

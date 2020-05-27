@@ -1,0 +1,11 @@
+# pip install azure-storage-blob
+# pip install azure-mgmt-storage
+
+# pip install azure-storage-blob
+# pip install azure-mgmt-storage
+
+# pip install azure.mgmt.resource
+
+
+# pip install azure-storage-blob
+# pip install azure-mgmt-storage

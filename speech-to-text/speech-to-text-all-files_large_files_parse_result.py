@@ -12,7 +12,7 @@ import json
 
 # Create a config file with your own configuration
 # config_file_dev.json has my dev config
-config_file_name = "config_file/config_file_dev.json"
+config_file_name = "speech-to-text/config_file/config_file_dev.json"
 
 with open(config_file_name, 'r') as json_data_file:
     configuration = json.load(json_data_file)
@@ -64,7 +64,7 @@ def speech_recognize_continuous_from_file(file):
         done = True
 
     # Connect callbacks to the events fired by the speech recognizer
-    speech_recognizer.recognizing.connect(lambda evt: print('RECOGNIZING: {}'.format(evt)))
+    #speech_recognizer.recognizing.connect(lambda evt: print('RECOGNIZING: {}'.format(evt)))
     speech_recognizer.recognized.connect(lambda evt: print('RECOGNIZED: {}'.format(evt)))
     speech_recognizer.session_started.connect(lambda evt: print('SESSION STARTED: {}'.format(evt)))
     speech_recognizer.session_stopped.connect(lambda evt: print('SESSION STOPPED {}'.format(evt)))

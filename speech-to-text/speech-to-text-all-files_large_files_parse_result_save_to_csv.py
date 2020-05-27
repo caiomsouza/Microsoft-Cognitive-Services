@@ -1,5 +1,6 @@
 # Author: Caio Moreno 
 
+# https://github.com/Azure-Samples/cognitive-services-speech-sdk/issues/345
 
 # Code to save the output to a file
 # python "speech-to-text-all-files_large_files.py" > output_speech_to_text_20200501_01.log
@@ -9,6 +10,8 @@ import glob
 import azure.cognitiveservices.speech as speechsdk
 import time
 import json
+import pandas as pd
+
 
 # Create a config file with your own configuration
 # config_file_dev.json has my dev config
@@ -41,13 +44,9 @@ print ("########################################################################
 print ("PROGRAM START")
 print ("####################################################################################")
 
-# Function to convert large audio files (15 seconds only) to text
+## Caio
+
 def speech_recognize_continuous_from_file(file):
-
-    print('Loading file...')
-    print ("File: "+file)
-    print ("####################################################################################")
-
     """performs continuous speech recognition with input from an audio file"""
     # <SpeechContinuousRecognitionWithFile>
     speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_region)
@@ -58,11 +57,17 @@ def speech_recognize_continuous_from_file(file):
     done = False
 
     def stop_cb(evt):
-        """callback that signals to stop continuous recognition upon receiving an event `evt`"""
+        """callback that stops continuous recognition upon receiving an event `evt`"""
         print('CLOSING on {}'.format(evt))
+        speech_recognizer.stop_continuous_recognition()
         nonlocal done
         done = True
 
+    all_results = []
+    def handle_final_result(evt):
+        all_results.append(evt.result.text)
+
+    speech_recognizer.recognized.connect(handle_final_result)
     # Connect callbacks to the events fired by the speech recognizer
     speech_recognizer.recognizing.connect(lambda evt: print('RECOGNIZING: {}'.format(evt)))
     speech_recognizer.recognized.connect(lambda evt: print('RECOGNIZED: {}'.format(evt)))
@@ -78,8 +83,15 @@ def speech_recognize_continuous_from_file(file):
     while not done:
         time.sleep(.5)
 
-    speech_recognizer.stop_continuous_recognition()
-    # </SpeechContinuousRecognitionWithFile>
+    print("Printing all results:")
+    print(all_results)
+
+    df = pd.DataFrame(all_results)
+    df
+
+    file_name = file + r"pandas_dataframe_output.csv"
+    df.to_csv(file_name)
+
 
     print ("Audio File: "+file+" converted successfully")
     print ("####################################################################################")
@@ -96,6 +108,12 @@ for file in fileset:
     #run_speech_to_text_small_audio_files(file)
     speech_recognize_continuous_from_file(file)
     print(file)
+
+
+#with open('output.txt') as f:
+#    f.write('\n'.join(all_results))
+
+
 
 print ("####################################################################################")
 print ("PROGRAM END")
