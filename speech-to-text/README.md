@@ -11,7 +11,7 @@ pip install azure-cognitiveservices-speech
 ### Tool to convert M4a audio files to wav audio files
 https://www.zamzar.com/convert/m4a-to-wav/
 
-### Code to convert all audio files (small or large audio files) in the folder and save audio text to CSV output
+### Script to convert all audio files (small or large audio files) to CSV output (Recommened Script)
 ```
 python speech-to-text-all-files_large_files_parse_result_save_to_csv.py > script_output.log
 ```
