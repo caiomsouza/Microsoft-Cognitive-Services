@@ -89,7 +89,7 @@ def speech_recognize_continuous_from_file(file):
     df = pd.DataFrame(all_results)
     df
 
-    file_name = file + r"pandas_dataframe_output.csv"
+    file_name = file + r"-speech-to-text-csv-output.csv"
     df.to_csv(file_name)
 
 
