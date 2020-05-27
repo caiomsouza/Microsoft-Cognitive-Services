@@ -2,3 +2,5 @@ speech-to-text/config_file/config_file_dev.json
 textanalytics/config_file/config_file_dev.json
 .vscode/launch.json
 .vscode/settings.json
+blobstorage/config_file/config_file_dev.json
+speech-to-text/custom-speech-data/custom_speech_demo.py
