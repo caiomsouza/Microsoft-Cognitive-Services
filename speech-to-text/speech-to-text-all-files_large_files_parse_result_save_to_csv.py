@@ -1,17 +1,11 @@
 # Author: Caio Moreno 
 
-# https://github.com/Azure-Samples/cognitive-services-speech-sdk/issues/345
-
-# Code to save the output to a file
-# python "speech-to-text-all-files_large_files.py" > output_speech_to_text_20200501_01.log
-
 # Import Python Libraries
 import glob
 import azure.cognitiveservices.speech as speechsdk
 import time
 import json
 import pandas as pd
-
 
 # Create a config file with your own configuration
 # config_file_dev.json has my dev config
@@ -34,7 +28,6 @@ location = configuration["location"]["full_file_path"]
 #print("speech_key: " + speech_key)
 print("service_region: " + service_region)
 
-
 # Creates an instance of a speech config with specified subscription key and service region.
 # Replace with your own subscription key and region identifier from here: https://aka.ms/speech/sdkregion
 speech_key, service_region = speech_key, service_region
@@ -43,8 +36,6 @@ speech_config = speechsdk.SpeechConfig(subscription=speech_key, region=service_r
 print ("####################################################################################")
 print ("PROGRAM START")
 print ("####################################################################################")
-
-## Caio
 
 def speech_recognize_continuous_from_file(file):
     """performs continuous speech recognition with input from an audio file"""
@@ -108,12 +99,6 @@ for file in fileset:
     #run_speech_to_text_small_audio_files(file)
     speech_recognize_continuous_from_file(file)
     print(file)
-
-
-#with open('output.txt') as f:
-#    f.write('\n'.join(all_results))
-
-
 
 print ("####################################################################################")
 print ("PROGRAM END")
