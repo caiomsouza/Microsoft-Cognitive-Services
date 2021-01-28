@@ -13,7 +13,7 @@ Microsoft Cognitive Services - Sample Code
 
 Tittle: Using Azure AI to convert audio files into text (Hands on Demo) - Caio Moreno <br>
 
-Abstract (to follow the format below) <br>
+Abstract <br>
 Market-Oriented organizations are looking to find automated solutions to improve customer satisfaction and experience.  <br>
 Using Azure AI, we will  demo how the Data Scientist team could convert audio files (recorded from customers calls) to text format.  <br>
 The new text files could be used to get new insights from customers interactions and uncover potential opportunities to better understand the customers.  <br>
