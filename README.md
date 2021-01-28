@@ -6,7 +6,7 @@ Microsoft Cognitive Services - Sample Code
 ![Speech to Text Demo](https://github.com/caiomsouza/Microsoft-Cognitive-Services/blob/master/speech-to-text/img/speech-to-text-diagram.PNG)
 
 
-[![Azure AI Speech to Text](https://img.youtube.com/vi/MgMolXiZ7WA/0.png)](https://youtu.be/MgMolXiZ7WA "Azure AI Speech to Text")
+[![Azure AI Speech to Text](Youtube Video)](https://youtu.be/MgMolXiZ7WA "Azure AI Speech to Text")
 
   
 [Text Analytics Demo](https://github.com/caiomsouza/Microsoft-Cognitive-Services/tree/master/textanalytics) <BR> 
