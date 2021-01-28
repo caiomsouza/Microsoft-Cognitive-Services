@@ -27,3 +27,6 @@ This session is aimed to Data Scientists, Data Engineer and Software Developers 
 Speaker Bio <br>
 Caio Moreno – Sr. Cloud Solution Architect - Microsoft  <br>
 Caio Moreno is an AI/ML/Big Data specialist and a Senior Cloud Solution Architect at Microsoft. <br>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MgMolXiZ7WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
