@@ -1,8 +1,6 @@
 # Microsoft-Cognitive-Services
 Microsoft Cognitive Services - Sample Code
 
-[![Azure AI Speech to Text](https://img.youtube.com/vi/MgMolXiZ7WA/0.jpg)](https://www.youtube.com/watch?v=MgMolXiZ7WA "Azure AI Speech to Text")
-
 [Speech to Text Demo](https://github.com/caiomsouza/Microsoft-Cognitive-Services/tree/master/speech-to-text) <BR>
 
 ![Speech to Text Demo](https://github.com/caiomsouza/Microsoft-Cognitive-Services/blob/master/speech-to-text/img/speech-to-text-diagram.PNG)
@@ -26,5 +24,5 @@ Speaker Bio <br>
 Caio Moreno – Sr. Cloud Solution Architect - Microsoft  <br>
 Caio Moreno is an AI/ML/Big Data specialist and a Senior Cloud Solution Architect at Microsoft. <br>
 
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MgMolXiZ7WA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+### YouTube Video Demo (No audio)
+[![Azure AI Speech to Text](https://img.youtube.com/vi/MgMolXiZ7WA/0.jpg)](https://www.youtube.com/watch?v=MgMolXiZ7WA "Azure AI Speech to Text")
