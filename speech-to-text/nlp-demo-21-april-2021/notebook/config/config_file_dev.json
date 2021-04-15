@@ -1,0 +1,9 @@
+{
+    "speech_api":{
+        "speech_key":"YOUR_KEY",
+        "service_region":"uksouth"
+    },
+    "location":{
+        "full_file_path":"data"
+    }
+}

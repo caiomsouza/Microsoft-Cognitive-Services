@@ -4,3 +4,5 @@ textanalytics/config_file/config_file_dev.json
 .vscode/settings.json
 blobstorage/config_file/config_file_dev.json
 speech-to-text/custom-speech-data/custom_speech_demo.py
+speech-to-text/nlp-demo-21-april-2021/notebook/1_SpeechToTextTestOneFile-WithAzureCred.ipynb
+translator/bug_translate.py
