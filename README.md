@@ -24,5 +24,8 @@ Speaker Bio <br>
 Caio Moreno – Sr. Cloud Solution Architect - Microsoft  <br>
 Caio Moreno is an AI/ML/Big Data specialist and a Senior Cloud Solution Architect at Microsoft. <br>
 
+### Natural Language Processing Series | Convert audio files into text with Azure AI
+[![Natural Language Processing Series | Convert audio files into text with Azure AI](https://img.youtube.com/vi/h9lnrVZclOk/0.jpg)](https://www.youtube.com/watch?v=h9lnrVZclOk "Natural Language Processing Series | Convert audio files into text with Azure AI")
+  
 ### YouTube Video Demo (No audio)
 [![Azure AI Speech to Text](https://img.youtube.com/vi/MgMolXiZ7WA/0.jpg)](https://www.youtube.com/watch?v=MgMolXiZ7WA "Azure AI Speech to Text")
